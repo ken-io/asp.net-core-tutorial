@@ -1,0 +1,8 @@
+@model Ken.Tutorial.Web.Models.Person;
+
+<h3>@ViewBag.Title</h3>
+<ul>
+    <li>姓名：@Model.Name</li>
+    <li>生日：@Model.Birthday</li>
+    <li>爱好：@Model.Hobby[0] , @Model.Hobby[1]</li>
+</ul>

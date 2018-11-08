@@ -1,0 +1,10 @@
+@{
+    var hobby =ViewBag.Hobby as String[];
+}
+
+<h3>@ViewBag.Title</h3>
+<ul>
+    <li>姓名：@ViewBag.Name</li>
+    <li>生日：@ViewBag.Birthday</li>
+    <li>爱好：@hobby[0] , @hobby[1]</li>
+</ul>
