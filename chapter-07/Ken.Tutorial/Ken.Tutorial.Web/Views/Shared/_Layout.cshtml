@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>@ViewBag.Title - Ken.Tutorial</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Ken.Tutorial</h1>
+            <hr/>
+        </div>
+
+        <div class="content">
+            @RenderBody()
+        </div>
+        
+        <div class="footer">
+            <hr/>
+            @if(IsSectionDefined("footer"))
+            {
+                RenderSection("footer");
+            }
+            else
+            {
+                <p>Layout Footer</p>
+            }
+        </div>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+@using Ken.Tutorial.Web.Models;
+@{
+    ViewBag.Title = "PartialView With Params Demo";
+}
+<h3>@ViewBag.Title</h3>
+<p>PartialView With Params Demo by ken.io</p>
+
+@await Html.PartialAsync("_NoteInfo", new NoteViewModel() { Title = "这是一个分部视图测试笔记", PublishTime = DateTime.Now, Body = "这是笔记的内容"  })
